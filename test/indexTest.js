@@ -2,7 +2,7 @@ describe("index.html", () => {
   describe("after index.js is processed", () => {
     it("no longer has DOM node 'main#main'", () => {
       expect(document.querySelector('main'), "Make sure you remove the <main> with id 'main'").to.not.exist
-    });
+    }); 
 
     it("has a 'newHeader' variable that points to node 'h1#victory'", () => {
       expect(newHeader.nodeName, "Make sure you create an <h1> with id 'victory'").eql('H1')
